@@ -4,6 +4,7 @@
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
+    font-family: 'Roboto';
     padding: 15px 63px;
     border: none;
     cursor: pointer;
@@ -11,6 +12,12 @@
     transition: opacity 200ms ease-in-out,
                 background 200ms ease-in-out,
                 border 200ms ease-in-out;
+}
+
+.button:disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
 }
 
 .button_primary {
@@ -21,24 +28,12 @@
     background-color: var(--blue-1);
 }
 
-.button_primary:disabled {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.5;
-}
-
 .button_secondary {
     background-color: var(--secondary);
 }
 
 .button_secondary:hover {
     background-color: var(--purple-1);
-}
-
-.button_secondary:disabled {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.5;
 }
 
 .button_alternate {
@@ -51,10 +46,4 @@
     background-color: var(--white);
     color: var(--grey-4);
     border: 1px solid var(--black)
-}
-
-.button_alternate:disabled {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.5;
 }

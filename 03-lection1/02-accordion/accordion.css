@@ -1,12 +1,11 @@
 /* Стилизация аккордеона */
 .accordion {
-    display: inline-block;
     font-weight: 400;
     font-size: 1rem;
     border: 1px solid var(--grey-3);
     padding: 24px 32px;
     border-radius: 8px;
-    width: 664px;
+    max-width: 664px;
 }
 
 .accordion__summary {
@@ -37,12 +36,4 @@
 .accordion__hidden {
     color: var(--grey-4);
     margin: 16px 0 8px 0;
-}
-
-.container__accordion {
-    margin-bottom: 8px;
-}
-
-.container__accordion:last-child {
-    margin-bottom: 0;
 }

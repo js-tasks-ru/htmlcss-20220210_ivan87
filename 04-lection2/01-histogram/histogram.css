@@ -1,9 +1,7 @@
 .histogram {
-    display: inline-block;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 16px 24px 24px 24px;
-    width: 304px;
     max-height: 143px;
 }
 
@@ -40,14 +38,16 @@
     display: flex;
     align-items: flex-end;
     margin-top: 39px;
+    height: 50px;
 }
 
-.histogram__item {
+.histogram__graph-column {
     width: 9px;
     background-color: var(--primary);
     margin-right: 1px;
+    flex-grow: 1;
 }
 
-.histogram__item:last-child {
+.histogram__graph-column:last-child {
     margin-right: 0px;
 }

@@ -10,6 +10,7 @@
 }
 
 .tooltip__popup {
+    display: none;
     position: absolute;
     white-space: nowrap;
     bottom: calc(100% + 8px);
@@ -25,7 +26,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #DDE2E5;
+    color: var(--white-1);
 }
 
 .tooltip__popup::after {
@@ -36,4 +37,8 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%);
+}
+
+.tooltip__icon:hover + .tooltip__popup {
+    display: block;
 }

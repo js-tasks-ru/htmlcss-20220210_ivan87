@@ -1,0 +1,7 @@
+.template {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 36px;
+    background-color: var(--white-2);
+}

@@ -5,43 +5,87 @@
         <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="../../components/card/index.css">
+        <link rel="stylesheet" href="../../components/about/index.css">
+        <link rel="stylesheet" href="../../components/histogram/index.css">
         <link rel="stylesheet" href="./index.css">
         <title>Reusable component library</title>
     </head>
     <body>
         <section class="page-component">
-            <header class="header">
+            <header class="page-component__header">
                 <h1 class="title">Reusable component library</h1>
             </header>
             <main class="main">
                 <section class="cards">
-                    <article class="card">
+                    <div class="card">
                         <div class="card__preview"></div>
                         <h4 class="card__title">Tooltip</h4>
-                    </article>
-                    <article class="card">
+                    </div>
+                    <div class="card">
                         <div class="card__preview"></div>
                         <h4 class="card__title">Custom form elements</h4>
-                    </article>
-                    <article class="card">
+                    </div>
+                    <div class="card">
                         <div class="card__preview"></div>
                         <h4 class="card__title">Calendar</h4>
-                    </article>
-                    <article class="card">
+                    </div>
+                    <div class="card">
                         <div class="card__preview"></div>
                         <h4 class="card__title">Modal dialog</h4>
-                    </article>
-                    <article class="card">
-                        <div class="card__preview"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card__preview">
+                            <article class="histogram">
+                                <header class="histogram__header">
+                                    <div class="histogram__info">
+                                        <h2 class="histogram__title">Total orders</h2>
+                                        <h4 class="histogram__counter">50254</h4>
+                                    </div>
+                                    <a href="#" class="histogram__link">View all</a>
+                                </header>
+                                <div class="histogram__graph">
+                                    <div class="histogram__graph-column" style="height: 100%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 100%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 100%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 95%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 67%"></div>
+                                </div>
+                            </article>
+                        </div>
                         <h4 class="card__title">Histogram</h4>
-                    </article>
-                    <article class="card">
+                    </div>
+                    <div class="card">
                         <div class="card__preview"></div>
                         <h4 class="card__title">Avatar</h4>
-                    </article>
+                    </div>
                 </section>
             </main>
-            <footer class="footer">
+            <footer class="page-component__footer">
                 <section class="about">
                     <h2 class="about__title">About</h2>
                     <p class="about__description">

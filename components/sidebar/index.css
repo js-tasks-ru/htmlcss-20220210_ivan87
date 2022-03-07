@@ -9,14 +9,14 @@
     margin-bottom: 16px;
 }
 
-.sidebar__components {
+.sidebar__menu {
     display: flex;
     flex-direction: column;
     gap: 4px;
     margin-bottom: 30px;
 }
 
-.sidebar__component {
+.sidebar__menu-item {
     font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
@@ -27,7 +27,7 @@
     text-decoration: none;
 }
 
-.sidebar__component_active {
+.sidebar__menu-item_active {
     color: var(--red-1)
 }
 

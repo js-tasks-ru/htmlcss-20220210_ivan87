@@ -2,21 +2,8 @@
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
-}
-
-.page-component__header {
-    padding: 96px 0 77px 0;
-}
-
-.main {
+    grid-row-gap: 67px;
     background-color: var(--white-2);
-    padding: 68px 0 204px 0;
-}
-
-.page-component__footer {
-    display: flex;
-    justify-content: center;
-    padding: 72px 0 136px 0;
 }
 
 .title {
@@ -25,13 +12,11 @@
     font-weight: 500;
     margin: 0 auto;
     max-width: 1100px;
+    padding: 96px 0;
 }
 
 .cards {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 1140px;
-    margin: 0 auto;
 }

@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 82px;
+}
+
+.footer_white {
+    background-color: var(--white);
+}

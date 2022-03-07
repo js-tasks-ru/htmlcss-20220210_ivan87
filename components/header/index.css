@@ -1,0 +1,7 @@
+.header {
+    min-height: 82px;
+}
+
+.header_white {
+    background-color: var(--white);
+}

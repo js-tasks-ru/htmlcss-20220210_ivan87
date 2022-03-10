@@ -1,8 +1,8 @@
 .footer {
+    min-height: 82px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 82px;
 }
 
 .footer_white {

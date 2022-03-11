@@ -1,0 +1,21 @@
+.page-component {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 67px;
+    background-color: var(--white-2);
+}
+
+.page-component__title {
+    font-family: 'Inter';
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 40px 0;
+}
+
+.page-component__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

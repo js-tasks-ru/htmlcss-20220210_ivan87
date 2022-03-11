@@ -8,7 +8,7 @@ body {
     font-size: 0;
 }
 
-body, html {
+html, body {
     height: 100%;
 }
 

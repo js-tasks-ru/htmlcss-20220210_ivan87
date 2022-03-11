@@ -5,7 +5,7 @@
     background-color: var(--white-2);
 }
 
-.title {
+.page-component__title {
     font-family: 'Inter';
     font-size: 50px;
     font-weight: 500;
@@ -14,7 +14,7 @@
     padding: 40px 0;
 }
 
-.cards {
+.page-component__cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

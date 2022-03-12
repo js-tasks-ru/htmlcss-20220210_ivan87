@@ -50,3 +50,31 @@
 .histogram__graph-column:last-child {
     margin-right: 0px;
 }
+
+@media (max-width: 576px) {
+    .histogram_preview {
+        max-width: 120px;
+        padding: 10px;
+    }
+
+    .histogram_preview .histogram__title {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .histogram_preview .histogram__counter {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .histogram_preview .histogram__link {
+        font-size: 10px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .histogram_preview .histogram__graph {
+        margin-top: 10px;
+        height: 30px;
+    }
+}

@@ -83,7 +83,7 @@
     font-size: 10px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .calendar_preview {
         padding: 0;
         border: none;

@@ -25,32 +25,38 @@
     gap: 30px;
 }
 
-@media (max-width: 1110px) {
-    .page-component {
-        height: auto;
-    }
-
+@media (max-width: 1142px) {
     .page-component__cards {
         max-width: 730px;
     }
 }
 
-@media (max-width: 730px) {
-    .page-component__cards {
-        max-width: 360px;
+@media (max-width: 1110px) {
+    .page-component {
+        height: auto;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .page-component {
         grid-template-rows: auto 1fr;
         grid-row-gap: 22px;
         height: 100%;
     }
 
+    .page-component__cards {
+        max-width: 552px;
+    }
+
     .page-component__title {
         font-size: 28px;
         line-height: 38px;
         max-width: 288px
+    }
+}
+
+@media (max-width: 552px) {
+    .page-component__cards {
+        max-width: 358px;
     }
 }

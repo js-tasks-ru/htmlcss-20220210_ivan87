@@ -14,11 +14,7 @@
     margin: 40px auto;
 }
 
-@media (max-width: 576px) {
-    .header {
-        border-bottom: 1px solid var(--grey-2);
-    }
-
+@media (max-width: 768px) {
     .header__header-menu {
         margin: 17px auto;
         max-width: 110px;

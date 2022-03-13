@@ -51,7 +51,7 @@
     margin-right: 0px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .histogram_preview {
         max-width: 120px;
         padding: 10px;

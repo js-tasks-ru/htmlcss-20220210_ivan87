@@ -1,9 +1,13 @@
+.main {
+    padding: 0 16px;
+}
+
 .main_page-component {
     background-color: var(--white-2);
 }
 
-.main_template {
-    display: grid;
-    grid-template-columns: 229px 1fr;
-    gap: 56px;
+@media (max-width: 768px) {
+    .main {
+        padding: 0;
+    }
 }

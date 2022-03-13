@@ -46,7 +46,7 @@
     color: var(--grey-4);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .card {
         padding: 0;
         height: 190px;

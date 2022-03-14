@@ -60,3 +60,7 @@
 .checkbox__input:disabled ~ .checkbox__state .checkbox__icon {
     color: var(--grey-2);
 }
+
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
+    text-decoration: underline;
+}

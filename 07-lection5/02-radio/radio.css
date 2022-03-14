@@ -10,8 +10,10 @@
     clip: rect(0, 0, 0, 0);
 }
 
-.radiobutton__circle {
+.radiobutton__control:before {
+    content: '';
     position: absolute;
+    display: inline-block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -42,7 +44,7 @@
     border-radius: 14px;
 }
 
-.radiobutton__input:checked ~ .radiobutton__state .radiobutton__circle {
+.radiobutton__input:checked ~ .radiobutton__state .radiobutton__control:before {
     background-color: var(--blue);
 }
 
@@ -57,4 +59,8 @@
 
 .radiobutton__input:disabled ~ .radiobutton__state .radiobutton__title {
     color: var(--grey-2);
+}
+
+.radiobutton__input:focus ~ .radiobutton__state .radiobutton__title {
+    text-decoration: underline;
 }

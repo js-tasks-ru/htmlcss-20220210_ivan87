@@ -1,10 +1,7 @@
-.checkbox {
-    display: inline-flex;
-    align-items: center;
-}
-
 .checkbox__state {
     position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 
 .checkbox__input {
@@ -26,6 +23,7 @@
 }
 
 .checkbox__control {
+    position: relative;
     cursor: pointer;
     display: inline-block;
     width: 28px;
@@ -55,7 +53,7 @@
     border-color: var(--grey-2);
 }
 
-.checkbox__input:disabled ~ .checkbox__title {
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
     color: var(--grey-2);
 }
 

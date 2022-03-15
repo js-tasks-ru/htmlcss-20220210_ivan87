@@ -11,24 +11,83 @@
         <link rel="stylesheet" href="../components/disclaimer/index.css">
         <link rel="stylesheet" href="../components/sidebar/index.css">
         <link rel="stylesheet" href="../components/component/index.css">
+        <link rel="stylesheet" href="../components/logo/index.css">
+        <link rel="stylesheet" href="../components/header-menu/index.css">
+        <link rel="stylesheet" href="../components/container/index.css">
+        <link rel="stylesheet" href="../components/histogram/index.css">
     </head>
     <body>
         <div class="template">
-            <header class="header header_white"></header>
-            <main class="main main_template">
-                <section class="sidebar">
-                    <h4 class="sidebar__header">Components</h4>
-                    <nav class="sidebar__menu">
-                        <a class="sidebar__menu-item" href="#">Modal</a>
-                        <a class="sidebar__menu-item" href="#">Tooltip</a>
-                        <a class="sidebar__menu-item" href="#">Avatar</a>
-                        <a class="sidebar__menu-item" href="#">Calendar</a>
-                        <a class="sidebar__menu-item sidebar__menu-item_active" href="#">Histogram</a>
-                        <a class="sidebar__menu-item" href="#">Custom form elements</a>
-                    </nav>
-                    <a class="sidebar__navigation" href="#">Main page</a>
+            <header class="header">
+                <section class="header-menu header__header-menu">
+                    <div class="logo">
+                        <svg class="logo__icon">
+                            <use href="../../assets/icons/sprites.svg#logo">
+                        </svg>
+                    </div>
                 </section>
-                <section class="component"></section>
+            </header>
+            <main class="main">
+                <div class="container container_template">
+                    <section class="sidebar">
+                        <h4 class="sidebar__header">Components</h4>
+                        <nav class="sidebar__menu">
+                            <a class="sidebar__menu-item" href="#">Modal</a>
+                            <a class="sidebar__menu-item" href="#">Tooltip</a>
+                            <a class="sidebar__menu-item" href="#">Avatar</a>
+                            <a class="sidebar__menu-item" href="#">Calendar</a>
+                            <a class="sidebar__menu-item sidebar__menu-item_active" href="#">Histogram</a>
+                            <a class="sidebar__menu-item" href="#">Custom form elements</a>
+                        </nav>
+                        <a class="sidebar__navigation" href="#">Main page</a>
+                    </section>
+                    <section class="component">
+                        <h3 class="component__title">Histogram</h3>
+                        <div class="component__item">
+                            <article class="histogram">
+                                <header class="histogram__header">
+                                    <div class="histogram__info">
+                                        <h2 class="histogram__title">Total orders</h2>
+                                        <h4 class="histogram__counter">50254</h4>
+                                    </div>
+                                    <a href="#" class="histogram__link">View all</a>
+                                </header>
+                                <div class="histogram__graph">
+                                    <div class="histogram__graph-column" style="height: 100%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 100%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 100%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 72%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 89%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 95%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 80%"></div>
+                                    <div class="histogram__graph-column" style="height: 61%"></div>
+                                    <div class="histogram__graph-column" style="height: 85%"></div>
+                                    <div class="histogram__graph-column" style="height: 67%"></div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
             </main>
             <footer class="footer">
                 <div class="disclaimer">Reusable component library</div>

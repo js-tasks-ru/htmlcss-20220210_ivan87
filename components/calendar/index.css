@@ -1,0 +1,115 @@
+.calendar {
+    display: inline-block;
+    padding: 28px 36px;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.calendar__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--blue-2);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.calendar__wrapper {
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.calendar__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.calendar__item {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--blue-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar__item_day {
+    font-family: 'Inter';
+    font-size: 14px;
+    color: var(--grey-5);
+}
+
+.calendar__item_selected {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.calendar__item_selected-day {
+    background: rgba(160, 177, 245, 0.2);
+}
+
+.calendar_preview {
+    padding: 15px 22px;
+    max-width: 180px;
+    max-height: 192px;
+}
+
+.calendar_preview .calendar__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+
+.calendar_preview .calendar__item {
+    line-height: 23px;
+}
+
+.calendar_preview .calendar__item_day {
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .calendar_preview {
+        padding: 0;
+        border: none;
+        max-width: 145px;
+        max-height: 140px;
+    }
+
+    .calendar_preview .calendar__title {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+
+    .calendar_preview .calendar__item {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .calendar_preview .calendar__item.calendar__item_day {
+        font-size: 8px;
+    }
+
+    .calendar_preview .calendar__inner {
+        position: initial;
+    }
+
+    .calendar_preview .calendar__wrapper {
+        padding: 0;
+    }
+}

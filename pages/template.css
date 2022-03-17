@@ -1,7 +1,16 @@
 .template {
     height: 100%;
+    width: 100%;
+    overflow: auto;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-row-gap: 36px;
     background-color: var(--white-2);
+}
+
+@media (max-width: 768px) {
+    .template {
+        grid-row-gap: 0px;
+        grid-template-rows: auto 1fr;
+    }
 }

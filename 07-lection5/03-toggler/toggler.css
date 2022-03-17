@@ -1,0 +1,71 @@
+.toggler__state {
+    display: inline-flex;
+    align-items: center;
+}
+
+.toggler__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    clip: rect(0, 0, 0, 0);
+}
+
+.toggler__control:before {
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 2px;
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--grey-2);
+    border-radius: 100%;
+}
+
+.toggler__control {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.toggler__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    margin-left: 12px;
+}
+ 
+.toggler__input:checked ~ .toggler__state .toggler__control {
+    background-color: var(--blue);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control:before {
+    left: auto;
+    right: 2px;
+    background-color: var(--white);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control {
+    border-color: var(--blue);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control:before {
+    background-color: var(--grey-3);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+    background-color: var(--grey-2);
+}
+
+.toggler__input:focus ~ .toggler__state .toggler__title {
+    text-decoration: underline;
+}

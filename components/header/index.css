@@ -1,7 +1,26 @@
 .header {
-    min-height: 82px;
+    padding: 0 16px;
 }
 
 .header_white {
     background-color: var(--white);
+}
+
+.header__header-menu {
+    margin: 25px auto;
+}
+
+.header__title {
+    margin: 40px auto;
+}
+
+@media (max-width: 768px) {
+    .header__header-menu {
+        margin: 17px auto;
+        max-width: 110px;
+    }
+
+    .header__title {
+        margin: 49px auto;
+    }
 }

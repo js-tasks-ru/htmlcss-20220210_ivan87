@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="../../components/about/index.css">
         <link rel="stylesheet" href="../../components/histogram/index.css">
         <link rel="stylesheet" href="../../components/tooltip/index.css">
+        <link rel="stylesheet" href="../../components/avatar/index.css">
+        <link rel="stylesheet" href="../../components/calendar/index.css">
+        <link rel="stylesheet" href="../../components/logo/index.css">
+        <link rel="stylesheet" href="../../components/header-menu/index.css">
         <link rel="stylesheet" href="../../components/modal/index.css">
         <link rel="stylesheet" href="../../components/footer/index.css">
         <link rel="stylesheet" href="../../components/header/index.css">
@@ -18,9 +22,16 @@
     <body>
         <section class="page-component">
             <header class="header header_white">
-                <h1 class="page-component__title">Reusable component library</h1>
+                <section class="header-menu header__header-menu">
+                    <div class="logo">
+                        <svg class="logo__icon">
+                            <use href="../../assets/icons/sprites.svg#logo">
+                        </svg>
+                    </div>
+                </section>
+                <h1 class="page-component__title header__title">Reusable component library</h1>
             </header>
-            <main class="main">
+            <main class="main main_page-component">
                 <section class="page-component__cards">
                     <div class="card">
                         <div class="card__preview">
@@ -42,37 +53,72 @@
                     </div>
                     <div class="card">
                         <div class="card__preview">
+                            <div class="calendar calendar_preview">
+                                <h4 class="calendar__title">October 2022</h4>
+                                <div class="calendar__wrapper">
+                                    <div class="calendar__inner">
+                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                        <span class="calendar__item calendar__item_day">Wed</span>
+                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item">1</span>
+                                        <span class="calendar__item">2</span>
+                                        <span class="calendar__item">3</span>
+                                        <span class="calendar__item">4</span>
+                                        <span class="calendar__item">5</span>
+                                        <span class="calendar__item">6</span>
+                                        <span class="calendar__item">7</span>
+                                        <span class="calendar__item">8</span>
+                                        <span class="calendar__item">9</span>
+                                        <span class="calendar__item">10</span>
+                                        <span class="calendar__item">11</span>
+                                        <span class="calendar__item">12</span>
+                                        <span class="calendar__item">13</span>
+                                        <span class="calendar__item">14</span>
+                                        <span class="calendar__item">15</span>
+                                        <span class="calendar__item">16</span>
+                                        <span class="calendar__item">17</span>
+                                        <span class="calendar__item calendar__item_selected">18</span>
+                                        <span class="calendar__item calendar__item_selected-day">19</span>
+                                        <span class="calendar__item calendar__item_selected-day">20</span>
+                                        <span class="calendar__item calendar__item_selected-day">21</span>
+                                        <span class="calendar__item calendar__item_selected-day">22</span>
+                                        <span class="calendar__item calendar__item_selected">23</span>
+                                        <span class="calendar__item">24</span>
+                                        <span class="calendar__item">25</span>
+                                        <span class="calendar__item">26</span>
+                                        <span class="calendar__item">27</span>
+                                        <span class="calendar__item">28</span>
+                                        <span class="calendar__item">29</span>
+                                        <span class="calendar__item">30</span>
+                                        <span class="calendar__item">31</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card__description">
-                            <div class="card__description">
-                                <h4 class="card__title">Custom form elements</h4>
-                                <h4 class="card__subtitle">Element</h4>
-                            </div>
+                            <h4 class="card__title">Calendar</h4>
+                            <h4 class="card__subtitle">Container</h4>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card__preview">
                         </div>
                         <div class="card__description">
-                            <div class="card__description">
-                                <h4 class="card__title">Calendar</h4>
-                                <h4 class="card__subtitle">Container</h4>
-                            </div>
+                            <h4 class="card__title">Modal dialog</h4>
+                            <h4 class="card__subtitle">Container</h4>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card__preview">
-                        </div>
-                        <div class="card__description">
-                            <div class="card__description">
-                                <h4 class="card__title">Modal dialog</h4>
-                                <h4 class="card__subtitle">Container</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__preview">
-                            <article class="histogram">
+                            <article class="histogram histogram_preview">
                                 <header class="histogram__header">
                                     <div class="histogram__info">
                                         <h2 class="histogram__title">Total orders</h2>
@@ -121,18 +167,19 @@
                     </div>
                     <div class="card">
                         <div class="card__preview">
+                            <div class="avatar">
+                                <img class="avatar__image" src="../../assets/images/avatar-200.jpg" alt="аватар пользователя">
+                            </div>
                         </div>
                         <div class="card__description">
-                            <div class="card__description">
-                                <h4 class="card__title">Avatar</h4>
-                                <h4 class="card__subtitle">Element</h4>
-                            </div>
+                            <h4 class="card__title">Avatar</h4>
+                            <h4 class="card__subtitle">Element</h4>
                         </div>
                     </div>
                 </section>
             </main>
             <footer class="footer footer_white">
-                <section class="about">
+                <section class="about footer__about">
                     <h2 class="about__title">About</h2>
                     <p class="about__description">
                         This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.

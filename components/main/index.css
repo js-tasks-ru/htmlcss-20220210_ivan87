@@ -1,11 +1,13 @@
 .main {
-    max-width: 1110px;
-    width: 100%;
-    margin: 0 auto;
+    padding: 0 16px;
 }
 
-.main_template {
-    display: grid;
-    grid-template-columns: 229px 1fr;
-    gap: 56px;
+.main_page-component {
+    background-color: var(--white-2);
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 0;
+    }
 }

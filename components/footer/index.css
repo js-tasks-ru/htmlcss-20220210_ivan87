@@ -1,10 +1,20 @@
 .footer {
-    min-height: 82px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 16px;
 }
 
 .footer_white {
     background-color: var(--white);
+}
+
+.footer__about {
+    margin: 72px 0;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: none;
+    }
 }

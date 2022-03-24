@@ -16,7 +16,7 @@
     overflow-x: scroll;
 }
 
-.tabs__scroller label {
+.tabs__scroller .tabs__menu-item {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -27,15 +27,15 @@
     margin-right: 40px;
 }
 
-.tabs input[type="radio"] {
+.tabs__input {
     width: 0;
     height: 0;
     clip: rect(0, 0, 0, 0);
 }
 
-.tabs__all-tab:checked ~ .tabs__nav label:first-child,
-.tabs__complex-tab:checked ~ .tabs__nav label:nth-child(2),
-.tabs__simple-tab:checked ~ .tabs__nav label:last-child {
+.tabs__all-tab:checked ~ .tabs__nav .tabs__menu-item:first-child,
+.tabs__complex-tab:checked ~ .tabs__nav .tabs__menu-item:nth-child(2),
+.tabs__simple-tab:checked ~ .tabs__nav .tabs__menu-item:last-child {
     color: var(--black);
     padding-bottom: 8px;
     border-bottom: 5px solid var(--black); 
@@ -53,7 +53,7 @@
     display: block;
 }
 
-.tabs label {
+.tabs .tabs__menu-item {
     white-space: nowrap;
 }
 

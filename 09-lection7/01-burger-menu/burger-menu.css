@@ -2,13 +2,7 @@
     background: var(--white);
 }
 
-.header__burger-icon {
-    width: 24px;
-    height: 24px;
-}
-
-.burger-menu__close-button,
-.header__burger-button {
+.burger-menu__close-button {
     border: none;
     background: none;
     padding: 0;

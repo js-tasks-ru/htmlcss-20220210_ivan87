@@ -14,6 +14,17 @@
     margin: 40px auto;
 }
 
+.header__burger-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.header__burger-button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
 @media (max-width: 768px) {
     .header__header-menu {
         margin: 17px auto;

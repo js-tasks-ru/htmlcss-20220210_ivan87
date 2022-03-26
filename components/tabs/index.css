@@ -33,23 +33,23 @@
     clip: rect(0, 0, 0, 0);
 }
 
-.tabs__all-tab:checked ~ .tabs__nav .tabs__menu-item:first-child,
-.tabs__complex-tab:checked ~ .tabs__nav .tabs__menu-item:nth-child(2),
-.tabs__simple-tab:checked ~ .tabs__nav .tabs__menu-item:last-child {
+.tabs__input_all-tab:checked ~ .tabs__nav .tabs__menu-item:first-child,
+.tabs__input_complex-tab:checked ~ .tabs__nav .tabs__menu-item:nth-child(2),
+.tabs__input_simple-tab:checked ~ .tabs__nav .tabs__menu-item:last-child {
     color: var(--black);
     padding-bottom: 8px;
     border-bottom: 5px solid var(--black); 
 }
 
-.tabs__all-tab,
+.tabs__content_all-tab,
 .tabs__content_complex,
 .tabs__content_simple {
     display: none;
 }
 
-.tabs__all-tab:checked ~ .tabs__all-tab,
-.tabs__complex-tab:checked ~ .tabs__content_complex,
-.tabs__simple-tab:checked ~ .tabs__content_simple {
+.tabs__input_all-tab:checked ~ .tabs__content_all-tab,
+.tabs__input_complex-tab:checked ~ .tabs__content_complex,
+.tabs__input_simple-tab:checked ~ .tabs__content_simple {
     display: block;
 }
 

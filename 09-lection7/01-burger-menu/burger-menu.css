@@ -1,0 +1,38 @@
+.burger-menu {
+    background: var(--white);
+}
+
+.burger-menu__close-button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.burger-menu__close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--grey-2);
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+.burger-menu__close-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.burger-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100vw);
+    transition: transform 1s ease-in-out;
+}
+
+.burger-menu[data-open] {
+    transform: translateX(0);
+}

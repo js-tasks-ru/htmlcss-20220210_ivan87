@@ -2,6 +2,10 @@
     padding: 0 16px;
 }
 
+.main__separator {
+    margin: 0 -16px;
+}
+
 .main_page-component {
     background-color: var(--white-2);
 }
@@ -9,5 +13,10 @@
 @media (max-width: 768px) {
     .main {
         padding: 0;
+        overflow-x: hidden;
+    }
+
+    .main__separator {
+        margin: 0;
     }
 }
